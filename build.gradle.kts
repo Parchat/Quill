@@ -1,9 +1,8 @@
 import io.papermc.paperweight.util.constants.*
 
 plugins {
-    id("com.github.johnrengelman.shadow")
-
-    id("io.papermc.paperweight.patcher")
+    id("com.github.johnrengelman.shadow") version "7.1.2" apply false
+    id("io.papermc.paperweight.patcher") version "1.3.11"
 
     `maven-publish`
 

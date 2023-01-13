@@ -6,14 +6,9 @@ pluginManagement {
         gradlePluginPortal()
         mavenCentral()
     }
-
-    plugins {
-        id("com.github.johnrengelman.shadow") version "7.1.2" apply false
-        id("io.papermc.paperweight.patcher") version "1.3.11"
-    }
 }
 
-rootProject.name = "quill"
+rootProject.name = "Quill"
 for (name in listOf("Quill-API", "Quill-Server")) {
     val projName = name.toLowerCase(Locale.ENGLISH)
     include(projName)
