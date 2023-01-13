@@ -1,5 +1,46 @@
 # Contributing to Quill
 
+---
+
+## Use a personal fork not a separate srganization
+
+Quill will routinely modify your pull request, Whether it's a quick rebase or to take care
+of any minor nitpicks we might have. It's better for us to solve these problems for you than make you go back and forth trying to fix it yourself.
+
+Unfortunately, If you use an organization for your pull request, It prevents Quill from
+modifying it. This requires us to manually merge your Pull Request, resulting in us closing the PR instead of marking it as merged.
+
+We much prefer to have Pull Requests show as merged, so please do not use repositories on organizations for Pull Requests.
+
+See <https://github.com/isaacs/github/issues/1681> for more information on the issue.
+
+## Requirements
+
+To get started with PRing changes, you'll need the following software, most of
+which can be obtained in (most) package managers such as `apt` (Debian / Ubuntu;
+you will most likely use this for WSL), `homebrew` (macOS / Linux), and more:
+
+- `git` (package `git` everywhere);
+- A Java 16 or later JDK (packages vary, use Google/DuckDuckGo/etc.).
+    - [Adoptium](https://adoptium.net/) has builds for most operating systems.
+    - Purpur requires JDK 16 to build, however makes use of Gradle's
+      [Toolchains](https://docs.gradle.org/current/userguide/toolchains.html)
+      feature to allow building with only JRE 8 or later installed. (Gradle will
+      automatically provision JDK 16 for compilation if it cannot find an existing
+      install).
+
+If you're on Windows, Check [the section on WSL](#patching-and-building-is-really-slow-what-can-i-do).
+
+If you're compiling with Docker, You can use Adoptium's [`eclipse-temurin`](https://hub.docker.com/_/eclipse-temurin/) images like so:
+
+```console
+# docker run -it -v "$(pwd)":/data --rm eclipse-temurin:16.0.2_7-jdk bash
+Pulling image...
+
+root@abcdefg1234:/# javac -version
+javac 16.0.2
+```
+
 ### What are patches?
 
 ---
