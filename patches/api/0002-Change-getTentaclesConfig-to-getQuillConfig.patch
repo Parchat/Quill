@@ -1,0 +1,26 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: Ryder Belserion <no-reply@ryderbelserion.com>
+Date: Thu, 12 Jan 2023 22:28:46 -0500
+Subject: [PATCH] Change getTentaclesConfig() to getQuillConfig()
+
+
+diff --git a/src/main/java/org/bukkit/Server.java b/src/main/java/org/bukkit/Server.java
+index fc0b33272114c13dff6f5a5795e190fda79c071c..5336f243e819a05bccf1e614287c82c11a961d45 100644
+--- a/src/main/java/org/bukkit/Server.java
++++ b/src/main/java/org/bukkit/Server.java
+@@ -1983,12 +1983,12 @@ public interface Server extends PluginMessageRecipient, net.kyori.adventure.audi
+         }
+         // Purpur end
+ 
+-        // Tentacles start
++        // Quill start
+         @NotNull
+-        public org.bukkit.configuration.file.YamlConfiguration getTentaclesConfig() {
++        public org.bukkit.configuration.file.YamlConfiguration getQuillConfig() {
+             throw new UnsupportedOperationException("Not supported yet.");
+         }
+-        // Tentacles end
++        // Quill end
+ 
+         /**
+          * Sends the component to the player
