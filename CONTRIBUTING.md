@@ -91,12 +91,12 @@ This method works by temporarily resetting your HEAD to the desired commit to ed
 - If you have any changes you are currently working on, Type `git stash` to store them for later.
   - You can type `git stash pop` to retrieve them at any point.
 - Type `git rebase -i base` inside either `Quill-Server` or `Quill-API`.
-  - It should give you an output like <a href="https://gist.github.com/zachbr/21e92993cb99f62ffd7905d7b02f3159"this</ain the text editor you use.
+  - It should give you an output like <a href="https://gist.github.com/zachbr/21e92993cb99f62ffd7905d7b02f3159">this</a> in the text editor you use.
   - If the editor you have does not have a "menu" at the bottom, You are using `vim`
 - In order to edit in `vim`, You need to hit `I` which converts it to `insert` mode, You can now edit anything.
 - Replace `pick` with `edit` for the commit or patch you want to modify & save the chances.
   - Only do this for **ONE** commit at a time.
-  - You can save changes ( if using `vim` ) by using the keybind `Ctrl + C` then typing `:wq` which will save the file.
+  - You can save changes ( if using `vim` ) by typing `:wq` which will save the file.
 - Make the changes you want to the patch.
 - Type `git add .` to add your changes.
 - Type `git commit --amend` to commit.
