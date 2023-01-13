@@ -44,6 +44,8 @@ $\color{#eb2135}\textsf{\Large\&#x24D8;\kern{0.2cm}\normalsize Multi-threaded En
 - Why do you waste your time with this?
   - I like to waste my time.
 - ./gradlew applyPatches
+- Hit "i" to switch to edit mode in vim when editing patches.
+- Type :wq to save the file.
 
 ## License
 
