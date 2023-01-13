@@ -1,6 +1,6 @@
-<div style="text-align: center">
+<div align="center">
 
-## Quill
+# Quill
 <p>An experimental fork of <a href="https://github.com/PurpurMC/Purpur">Purpur</a> including <a href="https://github.com/Bloom-host/Petal">Petal</a> patches aiming to finish where they left off.</p>
 
 It does not mean our sole focus will be on what Petal has left but that is part of it.<br></br>
@@ -12,32 +12,30 @@ It does not mean our sole focus will be on what Petal has left but that is part 
 [![GPU License][license-shield]][license-url]
 [![Contact][discord-shield]][discord-url]
 
-### Warning
+<br>
 
-<ul style="list-style-position: inside">
-    <li style="color: yellow">This project is considered experimental & should not be used in production until told otherwise.</li>
-    <li style="color: yellow">Will it ever be stable? Probably not but We'll try.</li>
-</ul>
-
-<p>We color grade our features in terms of the state they are in. You can find that "legend" below.</p>
-
-<ul style="list-style-position: inside">
-    <li style="color: greenyellow; display: inline;padding-right: 6px;">Stable Feature</li>
-    <li style="color: yellow; display: inline;padding-right: 6px;">Testing Feature</li>
-    <li style="color: red; display: inline;padding-right: 6px;">Unstable Feature</li>
-    <li style="color: darkkhaki; display: inline;">Deprecated Feature</li>
-</ul>
+> __Warning__<br>
+> This project is considered experimental and should not be used in production until told otherwise.<br>
+> Will it ever be stable? It is highly likely that it won't be, but we can always try.
+>
+> We color grade our features in terms of the state they are in. You can find that "legend" below.<br>
+>$\color{#24cc18}\textsf{\Large\&#x24D8;\kern{0.2cm}\normalsize Stable Feature}$<br>
+>$\color{#cee026}\textsf{\Large\&#x24D8;\kern{0.2cm}\normalsize Testing Feature}$<br>
+>$\color{#eb2135}\textsf{\Large\&#x24D8;\kern{0.2cm}\normalsize Unstable Feature}$<br>
+>$\color{#cf8313}\textsf{\Large\&#x24D8;\kern{0.2cm}\normalsize Deprecated Feature}$
 
 </div>
 
----
 ## Features
-Quill will include 2 patches from Petal that mark significant improvements for entity-heavy servers, They are **VERY** unstable.
 
-<ul style="">
-    <li style="color: red;"><b>Async Pathfinding</b></li> - Entity pathfinding is offloaded to asynchronous threads to significantly reduce processing from the main thread
-    <li style="color: red;"><b>Multi-threaded Entity Tracking</b></li>- Entity tracking can take advantage of multiple threads to greatly reduce dependence on main thread processing
-</ul>
+> __Note__<br>
+> Quill will include 2 patches from Petal that mark significant improvements for entity-heavy servers, They are **VERY** unstable.
+
+$\color{#eb2135}\textsf{\Large\&#x24D8;\kern{0.2cm}\normalsize Async Pathfinding}$<br>
+- Entity pathfinding is offloaded to asynchronous threads to significantly reduce processing from the main thread.
+
+$\color{#eb2135}\textsf{\Large\&#x24D8;\kern{0.2cm}\normalsize Multi-threaded Entity Tracking}$<br>
+- Entity tracking can take advantage of multiple threads to greatly reduce dependence on main thread processing.
 
 ## FAQ
 
