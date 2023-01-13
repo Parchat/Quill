@@ -70,7 +70,7 @@ Clone your fork of the project to your local computer.
 ## Adding patches
 Adding patches to `Quill` is very simple.
 - Modify `Quill-Server` or `Quill-API` with any changes.
-- Type `git add.` inside the directory you made changes in.
+- Type `git add .` inside the directory you made changes in.
 - Run `git commit -m "Your commit message"`
 - Run `./gradlew rebuildPatches` in the root directory to convert your commit into a new patch.
 - Pull request or push ( if directly a maintainer ) the generated patch file(s) back to the repository.
@@ -114,7 +114,7 @@ Pull request or push ( if directly a maintainer ) the generated patch file(s) ba
 #### Manual method
 - Make your change while at HEAD.
   - Make a temporary commit. You don't need to make a message for this.
-  - Type git rebase -i base, move (cut) your temporary commit and move it under the line of the patch you wish to modify.
+  - Type `git rebase -i base`, move (cut) your temporary commit and move it under the line of the patch you wish to modify.
   - Change the `pick` to the appropriate action.
     - `f`/`fixup`: Merge your changes into the patch without touching the message.
     - `s`/`squash`: Merge your changes into the patch and use your commit message & subject.
