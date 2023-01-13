@@ -1,14 +1,16 @@
 import io.papermc.paperweight.util.constants.*
 
 plugins {
-    java
+    id("com.github.johnrengelman.shadow")
+
+    id("io.papermc.paperweight.patcher")
+
     `maven-publish`
-    id("com.github.johnrengelman.shadow") version "7.1.2" apply false
-    id("io.papermc.paperweight.patcher") version "1.3.11"
+
+    java
 }
 
 repositories {
-    mavenCentral()
     maven("https://papermc.io/repo/repository/maven-public/") {
         content {
             onlyForConfigurations(PAPERCLIP_CONFIG)
@@ -30,9 +32,7 @@ subprojects {
             languageVersion.set(JavaLanguageVersion.of(17))
         }
     }
-}
 
-subprojects {
     tasks.withType<JavaCompile>().configureEach {
         options.encoding = "UTF-8"
         options.release.set(17)
@@ -57,7 +57,6 @@ subprojects {
         maven("https://jitpack.io")
         maven("https://oss.sonatype.org/content/repositories/snapshots/")
     }
-
 }
 
 paperweight {
