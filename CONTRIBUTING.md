@@ -96,7 +96,7 @@ This method works by temporarily resetting your HEAD to the desired commit to ed
 - In order to edit in `vim`, You need to hit `I` which converts it to `insert` mode, You can now edit anything.
 - Replace `pick` with `edit` for the commit or patch you want to modify & save the chances.
   - Only do this for **ONE** commit at a time.
-  - You can save changes ( if using `vim` ) by hitting Ctrl + C then typing :wq which will save the file.
+  - You can save changes ( if using `vim` ) by using the keybind `Ctrl + C` then typing `:wq` which will save the file.
 - Make the changes you want to the patch.
 - Type `git add .` to add your changes.
 - Type `git commit --amend` to commit.

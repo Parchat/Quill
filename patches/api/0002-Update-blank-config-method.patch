@@ -1,7 +1,7 @@
 From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
 From: Ryder Belserion <no-reply@ryderbelserion.com>
 Date: Thu, 12 Jan 2023 22:28:46 -0500
-Subject: [PATCH] Change getTentaclesConfig() to getQuillConfig()
+Subject: [PATCH] Update blank config method.
 
 
 diff --git a/src/main/java/org/bukkit/Server.java b/src/main/java/org/bukkit/Server.java
