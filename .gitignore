@@ -1,0 +1,8 @@
+.gradle
+.idea
+
+build-logic/build
+build-logic/.gradle
+
+Quill-API
+Quill-Server
